@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Star Wars Clicker</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+  
+  <div class="contenedor_loader">
+    <div class="cargando">Cargando...</div>
+    <div class="loader"></div>
+  </div>
+
+<div class="audio">
+  <button onclick="silenciar()"><i class="bi bi-volume-mute-fill"></i>
+Silenciar</button>
+  <button onclick="activarSonido()"><i class="bi bi-play-fill"></i>Activar sonido</button>
+  <button onclick="bajarVolumen()"><i class="bi bi-volume-down-fill"></i>Bajar volumen</button>
+  <button onclick="subirVolumen()"<i class="bi bi-volume-up-fill"></i>Subir volumen</button>
+</div>
+
+  
+  <div class="parte1">
+    <div class="parte1_1">
+      <h2 id="contador">0</h2>
+    </div>
+    <div class="parte1_2"><img id="general" src="/image/general.png" alt="General Grievous" onclick="contar()"></div>
+  </div>
+  <div class="parte2">
+    <div class="titulo">
+      <h1>Star Wars Clicker</h1>
+      <div class="botones">
+        <div>
+          <button id="guardar" onclick="guardar()">Guardar</button>
+        </div>
+        <div>
+          <button id="reiniciar" onclick="reiniciar()">Reiniciar</button>
+        </div>
+      </div>
+    </div>
+    <div class="column" id="column_left"></div>
+    <div class="column" id="column_right"></div>
+    <div class="column" id="column_center"></div>
+    <div class="parte2_comprado"></div>
+  </div>
+  
+  <div class="parte3">
+    
+    <div class="redes">
+      <div class="redes_top">
+        <img id="insta" src="/image/instagram.png" alt="Instagram">
+        <p id="texto_insta"><a href="https://www.instagram.com/jordivazquezuribe/">@jordivazquezuribe</a></p>
+      </div>
+      <div class="redes_mid">
+        <img id="github" src="/image/github.png" alt="Github">
+        <p id="texto_github"><a href="https://github.com/JordiVU">JordiVU</a></p>
+      </div>
+      <div class="redes_bot">
+        <img id="infojobs" src="/image/infojobs.png" alt="Infojobs">
+        <p id="texto_info"><a href="">Texto de prueba</a></p>
+      </div>
+    </div>
+    <div class="shoping_numbers">
+      <h2>Clones: <span id="clon">0</span></h2>
+    </div>
+   
+    <div class="icons">
+      <div class="icons_left">
+        <div class="parte3_clon">
+          <img id="clon_icon" src="/image/clon_icon.png" alt="Clone Trooper">
+        </div>
+        <div class="parte3_fclon">
+          <img id="fclon_icon" src="/image/jedi_icon.png" alt="Clone Station">
+        </div>
+      </div>
+      <div class="button_left">
+        <button id="ComprarClon" onclick="comprarClon()">Clon</button>
+        <button id="ComprarFClon" onclick="comprarClon()">Fabrica Clon</button>
+      </div>
+      <div class="icons_right">
+        <div class="parte3_ship">
+          <img id="ship_icon" src="/image/jedi_icon.png" alt="A fucking ship">
+        </div>
+        <div class="parte3_jedi">
+          <img id="jedi_icon" src="/image/jedi_icon.png" alt="Jedi">
+        </div>
+      </div>
+      <div class="button_right">
+        <button id="ComprarVenator" onclick="comprarClon()">Venator</button>
+        <button id="ComprarJedi" onclick="comprarClon()">Jedi</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="tos" src="/audio/gota.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
