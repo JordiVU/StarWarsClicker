@@ -1,3 +1,3 @@
-t# StarWarsClicker
+# StarWarsClicker
 
 It's not finished
